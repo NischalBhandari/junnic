@@ -3,6 +3,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
+    z-index:20;
     
 }
 .header-container{
@@ -78,9 +79,52 @@ nav{
     background-size:cover;
     height:200px;
 }
+.parallax-2 {
+    background-image: url('../images/infoparallax.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
 .company-info{
     position:relative;
 }
 .company-history{
     position:absolute;
+}
+.col-2-left{
+    float:left;
+    width:48%;
+    
+    background-color:pink;
+}
+.col-2-right{
+    float:right;
+    width:48%;
+    background-color:orange;
+}
+.footer-wrapper{
+    background-color:black;
+    height:600px;
+}
+.footer-container{
+    width:90%;
+    margin: 0 auto;
+}
+.col-2-left-left{
+    float:left;
+    width:50%;
+}
+.col-2-right-right{
+    float:right;
+    width:50%;
+}
+.col-2-left-right{
+    float:right;
+    width:50%;
+}
+.col-2-right-left{
+    float:left;
+    width:50%;
 }

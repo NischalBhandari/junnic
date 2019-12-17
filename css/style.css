@@ -37,11 +37,67 @@
 .product-image img{
     width:90%;
 }
-.product-main {
+.product-list-4 {
     width: 21.2%;
     background-color: green;
     height: 200px;
     float: left;
     list-style: none;
     margin: 10px 1.9% 2.992em 1.9%;
+}
+.product-list-3 {
+    width: 29.5%;
+    background-color: green;
+    height: 200px;
+    float: left;
+    list-style: none;
+    margin: 10px 1.9% 2.992em 1.9%;
+}
+.product-list-2 {
+    width: 46%;
+    background-color: green;
+    height: 200px;
+    float: left;
+    list-style: none;
+    margin: 10px 1.9% 2.992em 1.9%;
+}
+.company-history{
+    position:absolute;
+    top:30px;
+    left:20px;
+    color:white;
+    font-size:40px;
+}
+.company-history-2{
+    position:absolute;
+    top:50%;
+    left:30%;
+    color:white;
+    font-size:40px;
+}
+.newsletter-form{
+    margin-top:10px;
+}
+.newsletter-form input{
+    width:100%;
+    border-radius:18px;
+    border:0;
+    height:30px;
+}
+.btn{
+    width:80%;
+    margin:0 auto;
+    margin-top:30px;
+    margin-left:30px;
+    border-radius:20px;
+    height:30px;
+    background-color:pink;
+    border:0;
+}
+.insta-image{
+    width:25%;
+    float:left;
+}
+.insta-image img{
+    width:100%;
 }
