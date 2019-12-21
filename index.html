@@ -1,8 +1,9 @@
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/layout.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <div class="header-wrapper clearfix">
@@ -12,18 +13,33 @@
             </div>
             <div class="header-menu clearfix">
                 <nav id="my-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#"> Shop</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">WholeSale</a></li>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Items</a></li>
-                </ul>
+                    <div  class="search-bar" id="search-bar">
+                        <input type="text"  placeholder="search..." class="search-input"/>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="has-drop"><a href="#" class="dropdown "> Shop</a>
+                            <ul class="submenu"> 
+                                <li><a href="#">Link1</a></li>
+                                <li><a href="#">Link2</a></li>
+                                <li><a href="#">Link3</a></li>
+                            </ul>
+                        </li>                        
+                        <li><a href="#">Store</a></li>
+                        <li class="has-drop">
+                            <a href="#" class="dropdown ">Resources</a>
+                            <ul class="submenu">
+                                <li><a href="#">Link4</a></li>
+                                <li><a href="#">Link5</a></li>
+                                <li><a href="#">Link6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#" class="cart">Items</a></li>
+                    </ul>
                 </nav>
                 <div class="search-button clearfix">
-                    <span class="search-logo">Search Button</span>
+                    <div id="show-search" class="search-logo"></div>
                 </div>
                 <div class="mobile-menu">
 
@@ -31,8 +47,9 @@
             </div>
         </div>
     </div>
-    <div class="banner-wrapper">
-        
+    <div class="banner-wrapper ">
+                 <img src="./images/face.jpg" />
+        <button class="button overlay-button" style="vertical-align:middle"><span>Buy with us </span></button>
     </div>
     <div class="body-wrapper container">
         <div class="quote">
@@ -90,9 +107,27 @@
         <div class="products-size-3 clearfix">
             <div class="products-list">
                 <ul>
-                    <li class="product-list-3"></li>
-                    <li class="product-list-3"></li>
-                    <li class="product-list-3"></li>
+                    <li class="product-list-3">
+                        <a href="#">
+                            <img class="product-img zoom" src="./images/cbdoil.png" />
+                            <h2 class="product-title">XYZ cbd oil</h2>
+                            <span>Price:xyz </span>
+                        </a>
+                    </li>
+                    <li class="product-list-3">
+                        <a href="#">
+                            <img class="product-img zoom" src="./images/product-2.jpg" />
+                            <h2 class="product-title">XYZ cbd oil</h2>
+                            <span>Price:xyz </span>
+                        </a>
+                    </li>
+                    <li class="product-list-3">
+                        <a href="#">
+                            <img class="product-img zoom" src="./images/product-3.jpg" />
+                            <h2 class="product-title">XYZ cbd oil</h2>
+                            <span>Price:xyz </span>
+                        </a>
+                    </li>
                     <li class="product-list-3"></li>
                     <li class="product-list-3"></li>
                     <li class="product-list-3"></li>
@@ -102,7 +137,7 @@
         </div>
         <div class="col-2 clearfix">
             <div class="col-2-left">
-                <div class="quote">
+                <div class="double-quote">
                     <span>
                         Our Products for your pets.
                     </span>
@@ -117,7 +152,7 @@
                 </div>
             </div>
             <div class="col-2-right">
-                <div class="quote">
+                <div class="double-quote">
                     <span>
                         Stay Connected with us .
                     </span>
@@ -141,7 +176,7 @@
                 <span>
                     Get a feel for our products
                 </span>
-                <button class="btn">
+                <button class="button">
                     Go Now
                 </button>
             </div>
@@ -216,9 +251,26 @@
             <div class="products-size-4 clearfix">
                 <div class="products-list">
                     <ul>
-                        <li class="product-list-4"></li>
-                        <li class="product-list-4"></li>
-                        <li class="product-list-4"></li>
+                        <li class="product-list-4">
+                          <a href="#">  <img class="product-img zoom" src="./images/cbdoil.png" />
+                            <h2 class="product-title">XYZ cbd oil</h2>
+                            <span>Price:xyz </span>
+                               </a>
+                            </li>
+                        <li class="product-list-4">
+                            <a href="#">
+                                <img class="product-img zoom" src="./images/product-2.jpg" />
+                                <h2 class="product-title">XYZ cbd oil</h2>
+                                <span>Price:xyz </span>
+                            </a>
+                        </li>
+                        <li class="product-list-4">
+                            <a href="#">
+                                <img class="product-img zoom" src="./images/product-3.jpg" />
+                                <h2 class="product-title">XYZ cbd oil</h2>
+                                <span>Price:xyz </span>
+                            </a>
+                        </li>
                         <li class="product-list-4"></li>
                     </ul>
                 </div>
@@ -227,12 +279,12 @@
     </div>
     <div class="footer-wrapper">
         <div class="footer-container">
-            <div class="col-2">
+            <div class="col-2 clearfix">
                 <div class="col-2-left">
-                    <div class="col-2-left-left">
+                    <div class="col-2-left-left ">
                         <a href="#"><img src="./images/myLogo.webp" /></a>
                     </div>
-                    <div class="col-2-left-right">
+                    <div class="col-2-left-right white-footer-list">
                         <span>Company</span>
                         <ul>
                             <li><a href="#">Lab Results</a></li>
@@ -242,16 +294,34 @@
                     </div>
                 </div>
                 <div class="col-2-right">
-                    <div class="col-2-right-left">
-
+                    <div class="col-2-right-left white-footer-list">
+                        <span>Shop Now</span>
+                        <ul>
+                            <li><a href="#">oil tinctures</a></li>
+                            <li><a href="#">Vape</a></li>
+                            <li><a href="#">Device and cartiridges</a></li>
+                            <li><a href="#">Pets</a></li>
+                            <li><a href="#">Gummies</a></li>
+                            <li><a href="#">Wellness Shots</a></li>
+                            <li><a href="#">Tropicals</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                        </ul>
                     </div>
-                    <div class="col-2-right-right">
-
+                    <div class="col-2-right-right white-footer-list">
+                        <span>Customer</span>
+                        <ul>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Veteran Discount</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="footer-copyright">
+                Copyright information
+            </div>
         </div>
     </div>
-
+    <script src="./js/search.js"></script>
 </body>
 </html>
