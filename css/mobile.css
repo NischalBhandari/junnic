@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    .product-list-3 {
+       width:100%;
+    }
+    .product-list-4{
+        width:100%;
+    }
+    .header-menu{
+        display:none;
+    }
+}
