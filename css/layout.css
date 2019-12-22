@@ -199,7 +199,7 @@ nav{
     background-image:url('../images/dropdown.png');
     background-repeat:no-repeat;
     background-size:20%;
-    background-position:100% 50%;  
+    background-position:50% 100%;  
 }
 .product-img {
     width: 100%;
