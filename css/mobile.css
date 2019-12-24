@@ -1,3 +1,82 @@
+@media only screen and (max-width: 900px) {
+    .product-list-3 {
+        width: 45%;
+    }
+
+    .product-list-4 {
+        width: 45%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .col-2-right {
+        width: 100%;
+    }
+
+    .col-2-left {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 10%;
+        float: left;
+    }
+
+    .overlay-button {
+        top: 70%;
+        left: 50%
+    }
+
+    .mobile-menu {
+        position: absolute;
+        right: 16px;
+        background-image: url('../images/burgermenu.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:50px;
+        width: 8%;
+        float: right;
+    }
+    .has-drop {
+        background-size: 5%;
+    }
+
+    .header-menu nav {
+        position: absolute;
+       
+        left: 0px;
+        width: 99%;
+        top: 0px;
+    }
+
+        .header-menu nav ul li {
+            width: 100%;
+            background-color: black;
+        }
+
+ .header-menu nav ul li a {
+                width: 100%;
+ }
+ .signup-container{
+     width:70%;
+     margin-top:20px;
+     margin-bottom:100px;
+ }
+ .signup-form label{
+     width:100%;
+     margin-left:0px;
+ }
+ .signup-form input{
+     width:100%;
+     margin-left:0px;
+     margin-right:0px;
+ }
+
+}
+
+
 @media only screen and (max-width: 600px) {
     .product-list-3 {
        width:100%;
@@ -5,7 +84,7 @@
     .product-list-4{
         width:100%;
     }
-    nav ul{
+    nav {
         display:none;
     }
     .col-2-right{
@@ -23,11 +102,50 @@
         left:50%
     }
     .mobile-menu{
+        position:absolute;
+        right:16px;
         background-image:url('../images/burgermenu.jpg');
         background-repeat:no-repeat;
         height:40px;
         background-size:cover;
-        width:15%;
+        width:10%;
         float:right;
+    }
+    .has-drop {
+        background-size: 5%;
+    }
+    .header-menu nav {
+        position: absolute;
+        
+        left:0px;
+        width:99%;
+        top:0px;
+    }
+    .header-menu nav ul li {
+        width:100%;
+        background-color:black;
+    }
+    .header-menu nav ul li a{
+        width:100%;
+    }
+    .company-info {
+        display: none;
+    }
+    .signup-container {
+        margin-top:10px;
+        width: 100%;
+       
+
+    }
+
+    .signup-form label {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .signup-form input {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

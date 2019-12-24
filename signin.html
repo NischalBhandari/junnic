@@ -1,24 +1,32 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+
 </head>
 <body>
     <div class="header-wrapper clearfix">
         <div class="header-container clearfix">
             <div class="header-logo clearfix">
-                <a href="#"><img src="./images/myLogo.webp" /></a>
+                <a href="#"><img src="./images/logo.png" /></a>
             </div>
             <div class="header-menu clearfix">
-                <nav id="my-nav">
-                    <div class="search-bar" id="search-bar">
-                        <input type="text" placeholder="search..." class="search-input" />
+                <div class="search-bar modal" id="search-bar">
+                    <div class="search-bar-with-close clearfix">
+                        <span id="close-search" class="close">&times;</span>
+                        <input type="text" placeholder="search..." class="modal-content" />
                     </div>
+                </div>
+                <nav id="my-nav">
+
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li>
-                            <a href="#" class="dropdown has-drop"> Shop</a>
+                        <li class="has-drop">
+                            <a href="#" class="dropdown "> Shop</a>
                             <ul class="submenu">
                                 <li><a href="#">Link1</a></li>
                                 <li><a href="#">Link2</a></li>
@@ -26,15 +34,14 @@
                             </ul>
                         </li>
                         <li><a href="#">Store</a></li>
-                        <li>
-                            <a href="#" class="dropdown has-drop">Resources</a>
+                        <li class="has-drop">
+                            <a href="#" class="dropdown ">Resources</a>
                             <ul class="submenu">
                                 <li><a href="#">Link4</a></li>
                                 <li><a href="#">Link5</a></li>
                                 <li><a href="#">Link6</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">WholeSale</a></li>
                         <li><a href="#">My Account</a></li>
                         <li><a href="#" class="cart">Items</a></li>
                     </ul>
@@ -49,10 +56,11 @@
         </div>
     </div>
     <div class="signup-banner-wrapper">
-        This is wrapper
+        <img src="./images/signupbanner.jpg" alt="./images/logo.png" />
     </div>
     <div class="body-wrapper clearfix">
         <div class="container">
+            <h2 class="page-title">Sign In to Junnic CBD</h2>
             <div class="signup-container">
                 <form class="signup-form clearfix">
                     <label>Email</label>
