@@ -79,10 +79,19 @@
 
 @media only screen and (max-width: 600px) {
     .product-list-3 {
-       width:100%;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .product-list-4{
         width:100%;
+        height:400px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:40px;
+        margin-bottom:40px;
     }
     nav {
         display:none;

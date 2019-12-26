@@ -4,8 +4,24 @@ var closeSearch = document.getElementById('close-search');
 var mobileMenu = document.getElementsByClassName('mobile-menu');
 var navBar = document.getElementById('my-nav');
 var searchBar = document.getElementById('search-bar');
+var addToCart = document.getElementById('add-to-cart');
 var show = true;
 var boolmobMenu = true;
+
+function openCity(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
 
 x.onclick = function () {
     if (show) {
@@ -32,4 +48,7 @@ mobileMenu[0].onclick = function () {
         navBar.style.display = 'none';
         boolmobMenu = !boolmobMenu;
     }
+}
+addToCart.onclick = function () {
+    console.log('cart clicked');
 }
