@@ -5,6 +5,10 @@ var mobileMenu = document.getElementsByClassName('mobile-menu');
 var navBar = document.getElementById('my-nav');
 var searchBar = document.getElementById('search-bar');
 var addToCart = document.getElementById('add-to-cart');
+var myCart = document.getElementById('my-cart');
+var myCartTable = document.getElementById('my-cart-table');
+var closeCart = document.getElementById('close-cart');
+var showCart = false;
 var show = true;
 var boolmobMenu = true;
 
@@ -21,7 +25,10 @@ function openCity(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
+myCart.onclick = function () {
+        myCartTable.style.display = 'block';
+    showCart = !showCart;
+}
 
 x.onclick = function () {
     if (show) {
@@ -32,6 +39,10 @@ x.onclick = function () {
         y.style.display = 'none';
         show = !show;
     }
+}
+closeCart.onclick = function () {
+    myCartTable.style.display = 'none';
+    showCart = !showCart;
 }
 closeSearch.onclick = function () {
    searchBar.style.display = 'none';

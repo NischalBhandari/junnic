@@ -25,6 +25,7 @@
 }
 .header-logo img{
     width:100%;
+    height:50px;
 }
 nav{
     width:95%;
@@ -35,14 +36,11 @@ nav{
     width:5%;
     cursor:pointer;
 }
-.search-logo{
-    background-image:url('../images/search.png');
-    background-repeat:no-repeat;
-    height:40px;
-    background-size:100%;
-    content:"";
-    width:100%;
-    border-radius:50%;
+.search-logo {
+    width: 100%;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 .clearfix::after,clearfix::before {
     content: "";
@@ -62,12 +60,15 @@ nav{
 }
 .overlay-span {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
-    color:white;
-    font-size:30px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius:25px;
 }
 .pages-overlay-span {
     position: absolute;
@@ -77,29 +78,33 @@ nav{
     font-size: 30px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+
 }
 .banner-wrapper img{
     width:100%;
     opacity:0.8;
     background-color:white;
 
+
 }
-/*.signup-banner-wrapper{
-    background-image:url('../images/signupbanner.jpg');
-    background-size:cover;
-    height:200px;
-    width:100%;
-}*/
+.signup-banner-wrapper {
+    background:linear-gradient(transparent,black),url('../images/smoking.jpg');
+    background-size: cover;
+    background-position:5% 35%;
+    height: 200px;
+    width: 100%;
+}
+.product-banner-wrapper {
+    background: linear-gradient(transparent,black),url('../images/herb.jpg');
+    background-size: cover;
+    box-shadow: 4px 4px 4px 4px white;
+    background-position: 5% 35%;
+    height: 200px;
+    width: 100%;
+}
 .signup-banner-wrapper{
     background-color:black;
     position:relative;
-}
-.signup-banner-wrapper img {
-    width: 100%;
-    clip-path: inset(0px 0px 30px 0px);
-    height: 250px;
-    opacity:0.5;
-   
 }
 .container{
     width:90%;
@@ -159,11 +164,13 @@ nav{
     float:right;
     width:48%;
 }
-.footer-wrapper{
-    background-color:black;
-    height:600px;
+.footer-wrapper {
+    background-color: black;
+    border-top: 2px solid white;
+    height: 600px;
 }
 .footer-container{
+    
     width:90%;
     margin: 0 auto;
 }
@@ -249,8 +256,8 @@ nav{
     border-radius: 18px;
     color: white;
     height: 40px;
-    background-color: #41a85f;
-    border: 1px solid #41a85f;
+    background-color: maroon;
+    border: 1px solid red;
     margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -261,6 +268,42 @@ nav{
     color: black;
     margin-top: 60px;
     height: 40px;
-    border: 4px solid #41a85f;
+    border: 4px solid maroon;
     margin-bottom: 40px;
+}
+.mobile-menu{
+    display:none;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(90deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+@keyframes jumping{
+    0%{
+        transform:scale(1.05);
+    }
+    25%{
+        transform: scale(1.10);
+    }
+    100%{
+        transform:scale(1.05);
+    }
+}
+@keyframes fading{
+    0%{
+        opacity:0.8;
+    }
+    50%{
+        opacity:0.1;
+    }
+    100%{
+        opacity:0.8;
+    }
 }

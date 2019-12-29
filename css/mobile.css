@@ -30,13 +30,14 @@
     }
 
     .mobile-menu {
-        position: absolute;
-        right: 16px;
-        background-image: url('../images/burgermenu.jpg');
+        display:block;
+        position:absolute;
+        right: 32px;
+        /*background-image: url('../images/burgermenu.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height:50px;
-        width: 8%;
+        width: 8%;*/
         float: right;
     }
     .has-drop {
@@ -61,7 +62,6 @@
  }
  .signup-container{
      width:70%;
-     margin-top:20px;
      margin-bottom:100px;
  }
  .signup-form label{
@@ -73,7 +73,21 @@
      margin-left:0px;
      margin-right:0px;
  }
-
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .overlay-span {
+        font-size: 20px;
+    }
+    .badge {
+        top: 10px;
+        right: 10px;
+    }
+    .cart{
+        animation-name:none;
+    }
 }
 
 
@@ -113,12 +127,16 @@
     .mobile-menu{
         position:absolute;
         right:16px;
-        background-image:url('../images/burgermenu.jpg');
+        display:block;
+        /*background-image:url('../images/burgermenu.jpg');
         background-repeat:no-repeat;
         height:40px;
         background-size:cover;
-        width:10%;
+        width:10%;*/
         float:right;
+    }
+    .mobile-menu img{
+        width:100%;
     }
     .has-drop {
         background-size: 5%;
@@ -141,7 +159,6 @@
         display: none;
     }
     .signup-container {
-        margin-top:10px;
         width: 100%;
        
 
@@ -156,5 +173,17 @@
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .overlay-span{
+        font-size:20px;
+    }
+    .badge {
+        top: 10px;
+        right: 10px;
     }
 }

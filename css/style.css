@@ -25,7 +25,6 @@
 }
 .header-menu > .search-button > .search-logo{
     float:right;
-    background-color:white;
 }
 .search-bar{
     display:none;
@@ -57,9 +56,12 @@
 
 /* The Close Button */
 .close {
+    background-color:red;
     color: #aaa;
    float:right;
-    font-size: 28px;
+   margin-right:20px;
+    font-size: 50px;
+
     font-weight: bold;
 }
 
@@ -213,12 +215,17 @@
 }
 .cart {
     background-color:white;
+    position:relative;
     border: 4px solid #6017a3 ;
     color: black !important ;
     font-size: 20px;
     border: 1px solid black;
     border-radius: 5px;
     font-size: 15px;
+    animation-name:jumping;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+
 }
 .search-input{
 }
@@ -235,23 +242,36 @@
 }
 .signup-container form{
     margin:0 auto;
+
 }
 .signup-container {
     width: 50%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom:250px;
+}
+.background {
+    background-color:black;
 }
 .signup-form label {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     line-height:40px;
-    color: Green;
+    color: black;
+    font-weight:bold;
     float: left;
     width: 20%;
 }
+.signup-form {
+    padding: 30px;
+    background-color:white;
+    box-shadow:2px 2px 2px white;
+    border-radius:45px;
+}
 .signup-form input{
+    border-radius:8px;
+    background-color:beige;
+    border:none;
     margin-left:10px;
     margin-right:10px;
     padding-left:10px;
@@ -345,8 +365,8 @@
 .page-title{
     text-align:center;
     font-size:50px;
-    margin-top:50px;
-    margin-bottom:100px;
+    margin-top:15px;
+    margin-bottom:30px;
 }
 .zoom {
     transition: transform .2s; /* Animation */
@@ -492,4 +512,84 @@
     }
 .show{
     display:block;
+}
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 15px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+.cart-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius:25px;
+
+}
+.cart-table {
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 50px;
+}
+    .cart-table th {
+        line-height: 40px;
+        color: black;
+        font-size: 15px;
+        font-weight: 800;
+        border-bottom: 1px solid #ddd;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.cart-table td {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.checkout {
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border:1px solid transparent;
+}
+.cart-container img{
+    float:left;
+    margin-top:10px;
+    margin-left:16px;
+    margin-bottom:30px;
+    width:20%;
+}
+.checkout-header {
+    float:right;
+    margin-bottom:40px;
+    right:50%;
+    width:60%;
+}
+.cart-container h2{
+    font-size:50px;
+
+
+}
+.total{
+    font-size:30px;
+    font-weight:500;
+}
+.grand-total{
+    color:green;
+    font-weight:900;
 }

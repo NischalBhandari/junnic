@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -43,14 +43,68 @@
                             </ul>
                         </li>
                         <li><a href="#">My Account</a></li>
-                        <li><a href="#" class="cart">Items</a></li>
+                        <li><a href="#" class="cart" id="my-cart">Items
+                                <span class="badge">3</span>
+                            
+                            </a></li>
                     </ul>
                 </nav>
                 <div class="search-button clearfix">
-                    <div id="show-search" class="search-logo"></div>
+                    <img id="show-search" class="search-logo" src="./images/search.png">
                 </div>
                 <div class="mobile-menu">
+                    <img src="./images/burgermenu.jpg"  alt="./images/dropdown.jpg"/>
+                </div>
+                <div class="modal" id="my-cart-table">
+                    <span id="close-cart" class="close">&times;</span>
+                    <div class="cart-container ">
+                        <img src="./images/logo.png" alt="./images/nischal.jpg" />
+                        <div class="checkout-header"><h2>Your Cart</h2></div>
+                        
+                        <table class="cart-table">
 
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Remove</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>vape</td>
+                                <td></td>
+                                <td></td>
+                                <td>$30</td>
+                            </tr>
+                            <tr>
+                                <td>cbd oil</td>
+                                <td></td>
+                                <td></td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td>CAP</td>
+                                <td></td>
+                                <td></td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td class="total" colspan="3">Total</td>
+                                <td class="total">$70</td>
+                            </tr>
+                            <tr>
+                                <td class="total" colspan="3">Discount</td>
+                                <td class="total">$70</td>
+                            </tr>
+                            <tr>
+                                <td class="total" colspan="3">Grand Total</td>
+                                <td class="grand-total">$70</td>
+                            </tr>
+                        </table>
+                        <center><button class="button checkout">Checkout</button></center>
+                    </div>
+                    
+                       
+                    
                 </div>
             </div>
         </div>

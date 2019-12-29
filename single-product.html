@@ -13,7 +13,7 @@
     <div class="header-wrapper clearfix">
         <div class="header-container clearfix">
             <div class="header-logo clearfix">
-                <a href="#"><img src="./images/logo.png" /></a>
+                <a href="#"><img src="./images/mylogo.webp" /></a>
             </div>
             <div class="header-menu clearfix">
                 <div class="search-bar modal" id="search-bar">
@@ -44,72 +44,133 @@
                             </ul>
                         </li>
                         <li><a href="#">My Account</a></li>
-                        <li><a href="#" class="cart">Items</a></li>
+                        <li>
+                            <a href="#" class="cart" id="my-cart">
+                                Items
+                                <span class="badge">3</span>
+
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="search-button clearfix">
-                    <div id="show-search" class="search-logo"></div>
+                    <img id="show-search" class="search-logo" src="./images/search.png">
                 </div>
                 <div class="mobile-menu">
+                    <img src="./images/burgermenu.jpg" alt="./images/dropdown.jpg" />
+                </div>
+                <div class="modal" id="my-cart-table">
+                    
+                    <div class="cart-container ">
+                        <img src="./images/mylogo.webp" alt="./images/nischal.jpg" />
+                        <div class="checkout-header"><h2>Your Cart 
+                                                         <span id="close-cart" class="close">&times;</span>
+                            </h2>
+                         
+                        </div>
+
+                        <table class="cart-table">
+
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Remove</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>vape</td>
+                                <td></td>
+                                <td></td>
+                                <td>$30</td>
+                            </tr>
+                            <tr>
+                                <td>cbd oil</td>
+                                <td></td>
+                                <td></td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td>CAP</td>
+                                <td></td>
+                                <td></td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td class="total" colspan="3">Total</td>
+                                <td class="total">$70</td>
+                            </tr>
+                            <tr>
+                                <td class="total" colspan="3">Discount</td>
+                                <td class="total">$70</td>
+                            </tr>
+                            <tr>
+                                <td class="total" colspan="3">Grand Total</td>
+                                <td class="grand-total">$70</td>
+                            </tr>
+                        </table>
+                        <center><button class="button checkout">Checkout</button></center>
+                    </div>
+
+
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="signup-banner-wrapper">
-        <img src="./images/herb.jpg" alt="./images/logo.png" />
+    <div class="product-banner-wrapper">
+        <!--<img src="./images/herb.jpg" alt="./images/logo.png" />-->
         <span class="pages-overlay-span">Best CBD in The Town</span>
     </div>
     <div class="body-wrapper clearfix">
         <div class="container">
             <div class="product-page">
-            <div class="col-2 clearfix">
-                <div class="col-2-left">
-                    <div class="product-list-1 zoom  ">
+                <div class="col-2 clearfix">
+                    <div class="col-2-left">
+                        <div class="product-list-1 zoom  ">
 
-                        <img src="./images/cbd1.jpg" alt="./images/face.jpg" />
+                            <img src="./images/cbd1.jpg" alt="./images/face.jpg" />
+                        </div>
                     </div>
-                </div>
-                <div class="col-2-right">
-                    <h2 class="single-product-title">
-                        CBD oil
-                    </h2>
-                    <span>Description:Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </span>
+                    <div class="col-2-right">
+                        <h2 class="single-product-title">
+                            CBD oil
+                        </h2>
+                        <span>Description:Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </span>
 
-                    <span class="single-product-price"> Price: $34</span>
-                    <div class="product-add-wrapper">
-                        <form>
-                            <label>Quantity : </label>
-                            <input class="product-quantity" type="number" step="1" min="1" name="product-quantity" value="1" />
-                            <button class="product-add-button">Add to cart</button>
-                        </form>
+                        <span class="single-product-price"> Price: $34</span>
+                        <div class="product-add-wrapper">
+                            <form>
+                                <label>Quantity : </label>
+                                <input class="product-quantity" type="number" step="1" min="1" name="product-quantity" value="1" />
+                                <button class="product-add-button">Add to cart</button>
+                            </form>
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-            <div class="tab">
-                <button class="tablinks active" onclick="openCity(event, 'description')">Description</button>
-                <button class="tablinks" onclick="openCity(event, 'additional_info')">Additional Info</button>
-                <button class="tablinks" onclick="openCity(event, 'others')">Others</button>
-            </div>
-
-            <div id="description" class="tabcontent show">
-                <h3>Description</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-
-            <div id="additional_info" class="tabcontent">
-                <h3>Additional Info</h3>
-                <p>Weight: 40 ounces</p>
-                <p>Height: 20 cm</p>
-            </div>
-
-            <div id="others" class="tabcontent">
-                <h3>Others</h3>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
+                <div class="tab">
+                    <button class="tablinks active" onclick="openCity(event, 'description')">Description</button>
+                    <button class="tablinks" onclick="openCity(event, 'additional_info')">Additional Info</button>
+                    <button class="tablinks" onclick="openCity(event, 'others')">Others</button>
                 </div>
+
+                <div id="description" class="tabcontent show">
+                    <h3>Description</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                <div id="additional_info" class="tabcontent">
+                    <h3>Additional Info</h3>
+                    <p>Weight: 40 ounces</p>
+                    <p>Height: 20 cm</p>
+                </div>
+
+                <div id="others" class="tabcontent">
+                    <h3>Others</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
             <div class="quote">
                 <span>
                     Our Famous products
