@@ -1,7 +1,7 @@
 .header-menu nav ul li{
     float:left;
     list-style:none;
-    width:15%;
+    min-width:15%;
     /*line-height:30px;
     padding-top:15px;
     padding-bottom:15px;*/
@@ -11,9 +11,11 @@
         text-decoration: none;
         display: block;
         color: white;
+        font-weight:800;
         line-height: 30px;
+        font-stretch:expanded;
         width:80%;
-        font-size:20px;
+        font-size:15px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -75,10 +77,9 @@
         position:relative;
     }
 .quote span, .double-quote span{
-    font-size:40px;
+    font-size:30px;
     color:black;
     margin-top:10px;
-    
 }
 .quote{
     background-image:url('../images/humble-team.png');
@@ -110,12 +111,11 @@
 .product-list-4 {
     width: 21.2%;
     position:relative;
-    background-color: whitesmoke;
+    background-color: white;
     height: 300px;
     float: left;
     list-style: none;
     margin: 10px 1.9% 2.992em 1.9%;
-    box-shadow: 4px 4px 5px 1px grey;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -132,11 +132,10 @@
 }
 .product-list-3 {
     width: 29.5%;
-    background-color: whitesmoke;
+    background-color: white;
     height: 400px;
     float: left;
     list-style: none;
-    box-shadow: 4px 4px 5px 1px grey;
     margin: 10px 1.9% 2.992em 1.9%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -160,10 +159,14 @@
     width:100%;
 }
 .company-history{
-    
     color:white;
-    font-size:40px;
+    animation-name:scrolling;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    font-weight:200;
+    font-size:30px;
     padding:50px;
+    line-height:45px;
 }
 .company-history-2 {
     color: white;
@@ -341,7 +344,11 @@
     display:block;
     padding-top:5px;
     color:green;
-   text-align:center;
+    font-size:17px;
+    font-weight:800;
+    float:right;
+    margin-top:5px;
+    margin-right:15px;
 
 }
 .product-list-3 a{
@@ -350,9 +357,14 @@
 }
 .product-list-4 span {
     display:block;
-    padding-top: 1px;
+    padding-top: 5px;
     color: green;
-    text-align: center;
+    font-weight:800;
+    font-size:17px;
+    text-align: left;
+    float:right;
+    margin-top:5px;
+    margin-right:15px;
 }
 
 .product-list-4 a {
@@ -360,7 +372,11 @@
     color: black;
 }
 .product-title{
-    text-align:center;
+    padding-left:15px;
+    float:left;
+    margin-top:8px;
+    font-size:20px;
+    font-weight:200;
 }
 .page-title{
     text-align:center;
@@ -397,20 +413,24 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.product-add-button-overlay{
-    display:none;
-    height:15%;
-    width:17.5%;
-    background-image:url('../images/add-button.png');
-    background-size:contain;
-    background-repeat:no-repeat;
-    cursor:pointer;
+.product-add-button-overlay {
+    display: none;
+    height: 15%;
+    width: 17.5%;
+    background-image: url('../images/add-button.png');
+    animation-name: background-jumping;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
+
 .single-product:hover .product-add-button-overlay {
-    display:block;
+    display: block;
     position: absolute;
     left: 50%;
-    z-index:30;
+    z-index: 30;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -530,6 +550,9 @@
     padding-bottom: 20px;
     border-radius:25px;
 
+}
+.cart-container img{
+    max-height:100px;
 }
 .cart-table {
     margin: 0 auto;

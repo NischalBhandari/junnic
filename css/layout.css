@@ -21,11 +21,10 @@
     float:left;
     margin-top:20px;
     width:20%;
-    background-color:blue;
 }
 .header-logo img{
     width:100%;
-    height:50px;
+    height:100px;
 }
 nav{
     width:95%;
@@ -134,20 +133,22 @@ nav{
     width:50%;
 }
 .parallax{
-    background-image:url('../images/infoparallax.jpg');
+    background:linear-gradient(black,transparent,black),url('../images/infoparallax.jpg');
     background-position:center;
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
+    margin:80px 0px;
+    padding:40px 0px;
 }
 .parallax-2 {
-    background-image: url('../images/infoparallax.jpg');
+    background-image: linear-gradient(black,transparent,black), url('../images/infoparallax.jpg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding: 200px 0px;
+    margin: 80px 0px;
 }
 .company-info{
     position:relative;
@@ -240,15 +241,16 @@ nav{
 .has-drop{
     background-image:url('../images/dropdown.png');
     background-repeat:no-repeat;
-    background-size:20%;
-    background-position:50% 100%;  
+    background-size:15%;
+    background-position:right;  
 }
 .product-img {
     width: 100%;
     height: 80%;
-    background-color:black;
+    background-color: black;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+
 }
 .signup-btn {
     width: 40%;
@@ -296,6 +298,23 @@ nav{
         transform:scale(1.05);
     }
 }
+@keyframes background-jumping {
+    0% {
+        background-size:85%;
+        height:18%;
+        
+    }
+
+    25% {
+        background-size: 95%;
+        height:18%;
+    }
+
+    100% {
+        background-size: 75%;
+        height:15%;
+    }
+}
 @keyframes fading{
     0%{
         opacity:0.8;
@@ -305,5 +324,17 @@ nav{
     }
     100%{
         opacity:0.8;
+    }
+}
+@keyframes scrolling {
+    0% {
+        transform: translate(0px,10px);
+    }
+
+    50% {
+        transform:translate(0px,-10px);
+    }
+    100% {
+        transform:translate(0px,10px);
     }
 }
