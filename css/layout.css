@@ -86,6 +86,12 @@ nav{
 
 
 }
+.image-collage{
+    background:url('../images/instagram.jpg');
+    padding-top:100px;
+    padding-bottom:100px;
+    border-radius:25px;
+}
 .signup-banner-wrapper {
     background:linear-gradient(transparent,black),url('../images/smoking.jpg');
     background-size: cover;
@@ -96,6 +102,7 @@ nav{
 .product-banner-wrapper {
     background: linear-gradient(transparent,black),url('../images/herb.jpg');
     background-size: cover;
+    position:relative;
     box-shadow: 4px 4px 4px 4px white;
     background-position: 5% 35%;
     height: 200px;
@@ -242,7 +249,7 @@ nav{
     background-image:url('../images/dropdown.png');
     background-repeat:no-repeat;
     background-size:15%;
-    background-position:right;  
+    background-position:50% 100%;  
 }
 .product-img {
     width: 100%;

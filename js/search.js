@@ -50,15 +50,7 @@ closeSearch.onclick = function () {
 }
 console.log(mobileMenu[0]);
 mobileMenu[0].onclick = function () {
-    if (boolmobMenu) {
-        navBar.style.display = 'block';
-
-        boolmobMenu = !boolmobMenu;
-    }
-    else {
-        navBar.style.display = 'none';
-        boolmobMenu = !boolmobMenu;
-    }
+    navBar.classList.toggle('show');
 }
 addToCart.onclick = function () {
     console.log('cart clicked');

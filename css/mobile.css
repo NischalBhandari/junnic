@@ -91,6 +91,9 @@
     .product-add-button-overlay{
         animation:none;
     }
+    .search-go {
+        width: 20%;
+    }
 }
 
 
@@ -188,5 +191,11 @@
     .badge {
         top: 10px;
         right: 10px;
+    }
+    .quote{
+        background-image:none;
+    }
+    .search-go{
+        width:30%;
     }
 }
