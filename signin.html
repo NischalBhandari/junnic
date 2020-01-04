@@ -12,45 +12,89 @@
     <div class="header-wrapper clearfix">
         <div class="header-container clearfix">
             <div class="header-logo clearfix">
-                <a href="#"><img src="./images/logo.png" /></a>
+                <a href="#"><img src="./images/logo-1.png" /></a>
             </div>
             <div class="header-menu clearfix">
                 <div class="search-bar modal" id="search-bar">
                     <div class="search-bar-with-close clearfix">
                         <span id="close-search" class="close">&times;</span>
-                        <input type="text" placeholder="search..." class="modal-content" />
+                        <div class="modal-content ">
+                            <input type="text" placeholder="search..." class="search-wrapper" />
+                            <div class="search-go">
+                                <img src="./images/search.jpg" alt="./images/search.png" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <nav id="my-nav">
+                <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="has-drop">
-                            <a href="#" class="dropdown "> Shop</a>
-                            <ul class="submenu">
-                                <li><a href="#">Link1</a></li>
-                                <li><a href="#">Link2</a></li>
-                                <li><a href="#">Link3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Store</a></li>
-                        <li class="has-drop">
-                            <a href="#" class="dropdown ">Resources</a>
-                            <ul class="submenu">
-                                <li><a href="#">Link4</a></li>
-                                <li><a href="#">Link5</a></li>
-                                <li><a href="#">Link6</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">My Account</a></li>
-                        <li>
-                            <a href="#" class="cart" id="my-cart">
-                                Items
-                                <span class="badge">3</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
                         </li>
                     </ul>
+                </div>
+            </nav>-->
+                <nav id="my-nav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="has-drop">
+                                <a href="#" class="dropdown"> Shop</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Link1</a></li>
+                                    <li><a href="#">Link2</a></li>
+                                    <li><a href="#">Link3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Store</a></li>
+                            <li class="has-drop">
+                                <a href="#" class="dropdown ">Resources</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Link4</a></li>
+                                    <li><a href="#">Link5</a></li>
+                                    <li><a href="#">Link6</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-drop">
+                                <a href="#" class="dropdown">My Account</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Signup</a></li>
+                                    <li><a href="#">SingIn</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#" class="cart" id="my-cart">
+                                    Items
+                                    <span class="badge">3</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <div class="search-button clearfix">
                     <img id="show-search" class="search-logo" src="./images/search.png">
@@ -61,9 +105,12 @@
                 <div class="modal" id="my-cart-table">
                     <span id="close-cart" class="close">&times;</span>
                     <div class="cart-container ">
-                        <img src="./images/logo.png" alt="./images/nischal.jpg" />
-                        <div class="checkout-header"><h2>Your Cart</h2></div>
-
+                        <div class="cart-header clearfix">
+                            <div class="cart-logo">
+                                <img src="./images/logo-1.png" alt="./images/nischal.jpg" />
+                            </div>
+                            <div class="checkout-header"><h2>Your Cart</h2></div>
+                        </div>
                         <table class="cart-table">
 
                             <tr>
@@ -139,7 +186,7 @@
             <div class="col-2 clearfix">
                 <div class="col-2-left">
                     <div class="col-2-left-left ">
-                        <a href="#"><img src="./images/myLogo.webp" /></a>
+                        <a href="#"><img src="./images/logo-1.png" /></a>
                     </div>
                     <div class="col-2-left-right white-footer-list">
                         <span>Company</span>

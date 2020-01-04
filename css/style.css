@@ -1,7 +1,7 @@
 .header-menu nav ul li{
     float:left;
     list-style:none;
-    min-width:15%;
+    min-width:16%;
     /*line-height:30px;
     padding-top:15px;
     padding-bottom:15px;*/
@@ -11,16 +11,16 @@
         text-decoration: none;
         display: block;
         color: white;
-        font-weight:800;
+        font-weight: bold;
         line-height: 30px;
-        font-stretch:expanded;
-        width:80%;
-        font-size:15px;
+        font-stretch: ultra-expanded;
+        width: 80%;
+        font-size: 15px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
         .header-menu nav ul li a:hover {
-            border-bottom:2px solid white;
+            border-bottom:1px solid green;
         }
 .header-menu nav {
     float:left;
@@ -78,7 +78,8 @@
     }
 .quote span, .double-quote span{
     font-size:30px;
-    color:black;
+    font-weight:800;
+    color:green;
     margin-top:10px;
 }
 .quote{
@@ -189,10 +190,11 @@
 .newsletter-form{
     padding:16px;
 }
-.add-color{
-    background-color:palegoldenrod;
-    border-radius:25px;
-    
+.add-color {
+    background:url('../images/grass.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 25px;
 }
 .newsletter-form input{
     width:100%;
@@ -205,7 +207,7 @@
 }
 .newsletter-form label{
     display:block;
-    color:navy;
+    color:white;
     font-weight:bold;
 }
 .btn{
@@ -214,7 +216,9 @@
     margin-bottom:20px;
     border-radius:20px;
     line-height:40px;
-    background-color:coral;
+    background-color:green ;
+    color:white;
+    font-weight:bold;
     border:0;
 }
 .insta-image{
@@ -232,10 +236,8 @@
 .cart {
     background-color:white;
     position:relative;
-    border: 4px solid #6017a3 ;
     color: black !important ;
     font-size: 20px;
-    border: 1px solid black;
     border-radius: 5px;
     font-size: 15px;
     animation-name:jumping;
@@ -243,6 +245,11 @@
     animation-iteration-count:infinite;
 
 }
+    .cart:hover {
+        background-color: #4cb23c;
+        color: white !important;
+        border: none;
+    }
 .search-input{
 }
 .white-footer-list ul li{
@@ -266,15 +273,17 @@
     margin-bottom:250px;
 }
 .background {
-    background-color:black;
+    background-image: linear-gradient(black,transparent,black),url('../images/junnic-product.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 .signup-form label {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    line-height:40px;
-    color: black;
-    font-weight:bold;
+    line-height: 40px;
+    color: #497444;
+    font-weight: bold;
     float: left;
     width: 20%;
 }
@@ -284,20 +293,19 @@
     box-shadow:2px 2px 2px white;
     border-radius:45px;
 }
-.signup-form input{
-    border-radius:8px;
-    background-color:beige;
-    border:none;
-    margin-left:10px;
-    margin-right:10px;
-    padding-left:10px;
-    margin-top:10px;
-    margin-bottom:10px;
-    width:70%;
-    height:40px;
-    float:right;
-    
-}
+    .signup-form input {
+        border-radius: 8px;
+        background-color: #e4f3e5;
+        border: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+        height: 40px;
+        float: right;
+    }
 .overlay-effect {
     position: absolute;
     top: 0;
@@ -391,11 +399,12 @@
     font-size:20px;
     font-weight:200;
 }
-.page-title{
-    text-align:center;
-    font-size:50px;
-    margin-top:15px;
-    margin-bottom:30px;
+.page-title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #468325;
 }
 .zoom {
     transition: transform .2s; /* Animation */
@@ -558,15 +567,13 @@
 .cart-container {
     width: 90%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 70px;
     background-color: white;
     padding-bottom: 20px;
     border-radius:25px;
 
 }
-.cart-container img{
-    max-height:100px;
-}
+
 .cart-table {
     margin: 0 auto;
     width: 80%;
@@ -575,7 +582,6 @@
     border-spacing: 0;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    margin-top: 50px;
 }
     .cart-table th {
         line-height: 40px;
@@ -596,19 +602,11 @@ tr:nth-child(even) {
     border-bottom: 1px solid #ddd;
 }
 .checkout {
-    background-color: #28a745;
+    background-color: green;
     border-color: #28a745;
     margin-top: 20px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding:15px;
     border:1px solid transparent;
-}
-.cart-container img{
-    float:left;
-    margin-top:10px;
-    margin-left:16px;
-    margin-bottom:30px;
-    width:20%;
 }
 .checkout-header {
     float:right;
@@ -618,6 +616,7 @@ tr:nth-child(even) {
 }
 .cart-container h2{
     font-size:50px;
+    color:green;
 
 
 }
@@ -653,5 +652,7 @@ tr:nth-child(even) {
 .active{
     background-color:red;
 }
-
+.white-color{
+    color:white !important;
+}
 

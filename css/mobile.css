@@ -94,6 +94,18 @@
     .search-go {
         width: 20%;
     }
+    .banner-wrapper img {
+        height:unset;
+
+    }
+    .overlay-button{
+        display:none;
+    }
+    .overlay-span{
+        display:flex;
+        top:60%;
+        justify-content:center;
+    }
 }
 
 
@@ -187,6 +199,9 @@
     }
     .overlay-span{
         font-size:20px;
+    }
+    .small-overlay-span{
+        top:78%;
     }
     .badge {
         top: 10px;

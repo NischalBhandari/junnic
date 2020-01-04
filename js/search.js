@@ -1,5 +1,4 @@
 var x = document.getElementById('show-search');
-var y = document.getElementById('search-bar');
 var closeSearch = document.getElementById('close-search');
 var mobileMenu = document.getElementsByClassName('mobile-menu');
 var navBar = document.getElementById('my-nav');
@@ -8,9 +7,7 @@ var addToCart = document.getElementById('add-to-cart');
 var myCart = document.getElementById('my-cart');
 var myCartTable = document.getElementById('my-cart-table');
 var closeCart = document.getElementById('close-cart');
-var showCart = false;
-var show = true;
-var boolmobMenu = true;
+
 
 function openCity(evt, tabName) {
     var i, tabcontent, tablinks;
@@ -26,29 +23,19 @@ function openCity(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 myCart.onclick = function () {
-        myCartTable.style.display = 'block';
-    showCart = !showCart;
+    myCartTable.classList.toggle('show');
 }
 
 x.onclick = function () {
-    if (show) {
-        y.style.display = 'block';
-        show = !show;
-    }
-    else {
-        y.style.display = 'none';
-        show = !show;
-    }
+    searchBar.classList.toggle('show');
 }
 closeCart.onclick = function () {
-    myCartTable.style.display = 'none';
-    showCart = !showCart;
+    myCartTable.classList.toggle('show');
 }
 closeSearch.onclick = function () {
-   searchBar.style.display = 'none';
-    show = !show;
+    searchBar.classList.toggle('show');
 }
-console.log(mobileMenu[0]);
+
 mobileMenu[0].onclick = function () {
     navBar.classList.toggle('show');
 }
