@@ -1,216 +1,272 @@
-@media only screen and (max-width: 900px) {
-    .product-list-3 {
-        width: 45%;
-    }
+@media only screen and (max-width: 1300px) {
+.overlay-span{
+    font-size:35px;
+}
+.product-img{
+    object-fit:scale-down;
+}
+.header-menu ul li a{
+    font-size:0.5vw;
+}
 
-    .product-list-4 {
-        width: 45%;
-    }
+}
+    @media only screen and (max-width: 900px) {
+        .product-list-3 {
+            width: 45%;
+        }
 
-    nav {
-        display: none;
-    }
+        .product-list-4 {
+            width: 45%;
+        }
 
-    .col-2-right {
-        width: 100%;
-    }
+        nav {
+            display: none;
+        }
 
-    .col-2-left {
-        width: 100%;
-    }
+        .col-2-right {
+            width: 100%;
+        }
 
-    .search-button {
-        width: 10%;
-        float: left;
-    }
+        .col-2-left {
+            width: 100%;
+        }
 
-    .overlay-button {
-        top: 70%;
-        left: 50%
-    }
+        .search-button {
+            width: 10%;
+            float: left;
+        }
 
-    .mobile-menu {
-        display:block;
-        position:absolute;
-        right: 32px;
-        /*background-image: url('../images/burgermenu.jpg');
+        .overlay-button {
+            top: 70%;
+            left: 50%
+        }
+
+        .mobile-menu {
+            display: block;
+            position: absolute;
+            right: 32px;
+            /*background-image: url('../images/burgermenu.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height:50px;
         width: 8%;*/
-        float: right;
-    }
-    .has-drop {
-        background-size: 5%;
-    }
-
-    .header-menu nav {
-        position: absolute;
-       
-        left: 0px;
-        width: 99%;
-        top: 0px;
-    }
-
-        .header-menu nav ul li {
-            width: 100%;
-            background-color: black;
+            float: right;
+        }
+        .has-drop {
+            background-size: 5%;
+            background-position: 90% 80%;
         }
 
- .header-menu nav ul li a {
+
+        .header-menu nav {
+            position: absolute;
+            left: 0px;
+            width: 99%;
+            top: 0px;
+        }
+
+            .header-menu nav ul li {
                 width: 100%;
- }
- .signup-container{
-     width:70%;
-     margin-bottom:100px;
- }
- .signup-form label{
-     width:100%;
-     margin-left:0px;
- }
- .signup-form input{
-     width:100%;
-     margin-left:0px;
-     margin-right:0px;
- }
-    .badge {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-    .overlay-span {
-        font-size: 20px;
-    }
-    .badge {
-        top: 10px;
-        right: 10px;
-    }
-    .cart{
-        animation-name:none;
-    }
-    .product-add-button-overlay{
-        animation:none;
-    }
-    .search-go {
-        width: 20%;
-    }
-    .banner-wrapper img {
-        height:unset;
+                background-color: black;
+            }
 
-    }
-    .overlay-button{
-        display:none;
-    }
-    .overlay-span{
-        display:flex;
-        top:60%;
-        justify-content:center;
-    }
-}
+                .header-menu nav ul li a {
+                    width: 100%;
+                }
 
-
-@media only screen and (max-width: 600px) {
-    .product-list-3 {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 0px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .product-list-4{
-        width:70%;
-        margin: 0 auto;
-        margin-left:15%;
-        margin-right:10px;
-        margin-top:30px;
-        margin-bottom:40px;
-    }
-    nav {
-        display:none;
-    }
-    .col-2-right{
-        width:100%;
-    }
-    .col-2-left{
-        width:100%;
-    }
-    .search-button{
-        width:15%;
-        float:left;
+        .signup-container {
+            width: 70%;
+            margin-bottom: 100px;
         }
-    .overlay-button{
-        top:70%;
-        left:50%
+
+        .signup-form label {
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .overlay-span {
+            font-size: 20px;
+        }
+
+        .badge {
+            top: 10px;
+            right: 10px;
+        }
+
+        .cart {
+            animation-name: none;
+        }
+
+        .product-add-button-overlay {
+            animation: none;
+        }
+
+
+        .banner-wrapper img {
+            height: unset;
+        }
+
+        .overlay-button {
+            display: none;
+        }
+
+        .overlay-span {
+            display: flex;
+            top: 60%;
+            justify-content: center;
+        }
+
+        .header-logo img {
+            width: 100%;
+        }
+        .modal-content {
+            width: 80%;
+        }
     }
-    .mobile-menu{
-        position:absolute;
-        right:16px;
-        display:block;
-        /*background-image:url('../images/burgermenu.jpg');
+
+
+    @media only screen and (max-width: 600px) {
+        .product-list-3 {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 0px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .product-list-4 {
+            width: 70%;
+            margin: 0 auto;
+            margin-left: 15%;
+            margin-right: 10px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .col-2-right {
+            width: 100%;
+        }
+
+        .col-2-left {
+            width: 100%;
+        }
+
+        .search-button {
+            width: 15%;
+            float: left;
+        }
+
+        .overlay-button {
+            top: 70%;
+            left: 50%
+        }
+
+        .mobile-menu {
+            position: absolute;
+            right: 16px;
+            display: block;
+            /*background-image:url('../images/burgermenu.jpg');
         background-repeat:no-repeat;
         height:40px;
         background-size:cover;
         width:10%;*/
-        float:right;
-    }
-    .mobile-menu img{
-        width:100%;
-    }
-    .has-drop {
-        background-size: 5%;
-    }
-    .header-menu nav {
-        position: absolute;
-        
-        left:0px;
-        width:99%;
-        top:0px;
-    }
-    .header-menu nav ul li {
-        width:100%;
-        background-color:black;
-    }
-    .header-menu nav ul li a{
-        width:100%;
-    }
-    .company-info {
-        display: none;
-    }
-    .signup-container {
-        width: 100%;
-       
+            float: right;
+        }
 
+            .mobile-menu img {
+                width: 100%;
+            }
+
+        .has-drop {
+            background-size: 5%;
+            background-position:80% 80%;
+        }
+
+        .header-menu nav {
+            position: absolute;
+            left: 0px;
+            width: 99%;
+            top: 0px;
+        }
+
+            .header-menu nav ul li {
+                width: 100%;
+                background-color: black;
+            }
+
+                .header-menu nav ul li a {
+                    width: 100%;
+                }
+
+        .company-info {
+            display: none;
+        }
+
+        .signup-container {
+            width: 100%;
+        }
+
+        .signup-form label {
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .overlay-span {
+            font-size: 20px;
+        }
+
+        .small-overlay-span {
+            top: 78%;
+        }
+
+        .badge {
+            top: 10px;
+            right: 10px;
+        }
+
+        .quote {
+            background-image: none;
+        }
+
+
+        .header-logo img {
+            width: 80%;
+        }
+        .modal-content{
+            width:80%;
+        }
     }
 
-    .signup-form label {
-        width: 100%;
-        margin-left: 0px;
+    @media only screen and (max-width: 460px) {
+        .small-overlay-span {
+            top: 88%;
+        }
     }
-
-    .signup-form input {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .badge {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-    .overlay-span{
-        font-size:20px;
-    }
-    .small-overlay-span{
-        top:78%;
-    }
-    .badge {
-        top: 10px;
-        right: 10px;
-    }
-    .quote{
-        background-image:none;
-    }
-    .search-go{
-        width:30%;
-    }
-}
