@@ -145,7 +145,7 @@
 .product-list-2 {
     width: 46%;
     background-color: white;
-    height: 200px;
+    height: 300px;
     float: left;
     list-style: none;
     margin: 10px 1.9% 2.992em 1.9%;
@@ -719,4 +719,29 @@ tr:nth-child(even) {
     animation-name:fading;
     animation-duration:0.5s;
     animation-iteration-count:1;
+}
+.user-image{
+
+width:80%;
+margin:0 auto;
+}
+.user-sales{
+float:left;
+width:100%;
+margin:40px;
+}
+.user-sales span{
+    font-size:40px;
+    color:red;
+    font-weight:300;
+}
+.user-image img{
+    width:100%;
+}
+.edit{
+    background-color:grey;
+    color:white;
+    border-radius:0px;
+    border:2px solid green;
+
 }

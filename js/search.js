@@ -7,7 +7,7 @@ var addToCart = document.getElementById('add-to-cart');
 var myCart = document.getElementById('my-cart');
 var myCartTable = document.getElementById('my-cart-table');
 var closeCart = document.getElementById('close-cart');
-
+var editUser = document.getElementById('edit_user');
 
 function openCity(evt, tabName) {
     var i, tabcontent, tablinks;
@@ -35,10 +35,22 @@ closeCart.onclick = function () {
 closeSearch.onclick = function () {
     searchBar.classList.toggle('show');
 }
+if (mobileMenu[0]) {
+    mobileMenu[0].onclick = function () {
+        navBar.classList.toggle('show');
+    }
+}
+if (addToCart) {
+    addToCart.onclick = function () {
+        console.log('cart clicked');
+    }
+}
 
-mobileMenu[0].onclick = function () {
-    navBar.classList.toggle('show');
-}
-addToCart.onclick = function () {
-    console.log('cart clicked');
-}
+    editUser.onclick = function (e) {
+        e.preventDefault();
+        var editUserValue = document.getElementsByClassName('user');
+        for (var i = 0; i < editUserValue.length; i++) {
+            console.log(editUserValue[i]);
+            editUserValue[i].removeAttribute('disabled');
+        }
+    }
